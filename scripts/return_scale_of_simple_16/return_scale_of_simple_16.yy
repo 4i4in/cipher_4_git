@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"return_scale_of_simple_16",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"return_scale_of_simple_16",
+  "parent":{
+    "name":"cipher_use",
+    "path":"folders/Scripts/cipher_use.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

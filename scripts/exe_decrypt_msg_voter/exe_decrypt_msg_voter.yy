@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"exe_decrypt_msg_voter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"exe_decrypt_msg_voter",
+  "parent":{
+    "name":"cipher_test",
+    "path":"folders/Scripts/cipher_test.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

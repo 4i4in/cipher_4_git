@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"test53bit",
+  "name":"test53bit",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

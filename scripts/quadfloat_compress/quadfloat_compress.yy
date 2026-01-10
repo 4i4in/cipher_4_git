@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"quadfloat_compress",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"quadfloat_compress",
+  "parent":{
+    "name":"quad_float_ops",
+    "path":"folders/Scripts/quad_float_ops.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

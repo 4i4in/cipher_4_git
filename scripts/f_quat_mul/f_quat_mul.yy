@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"f_quat_mul",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"f_quat_mul",
+  "parent":{
+    "name":"quaternions_op",
+    "path":"folders/Scripts/cipher_use/quaternions_op.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

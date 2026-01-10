@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"exe_create_random_key",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"exe_create_random_key",
+  "parent":{
+    "name":"cipher_use",
+    "path":"folders/Scripts/cipher_use.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

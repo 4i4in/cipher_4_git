@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"f_conj_okt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"f_conj_okt",
+  "parent":{
+    "name":"octonions_op",
+    "path":"folders/Scripts/cipher_use/octonions_op.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

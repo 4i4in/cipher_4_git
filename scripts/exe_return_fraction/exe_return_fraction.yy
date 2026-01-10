@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"exe_return_fraction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"exe_return_fraction",
+  "parent":{
+    "name":"cipher_use",
+    "path":"folders/Scripts/cipher_use.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

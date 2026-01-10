@@ -1,0 +1,13 @@
+Analiza danych (rozbierałem na kawałki: parsowałem 8489-8549, 61 tries; count NaN/deci/comp, mean |comp| non-NaN, sum abs comp, signs/pattern jumps; ±30 around 8519 full chaos no small cluster):
+
+Exact _key=8519: NaN=0, mean |comp|=0.75 (drift 1 in _3-5,7,9,11,12,14,15; sum abs~11 – lossy float po QCO/power/rot, atomic ok).
+Blisko (±1 do ±30): NaN avg~7 (e.g. 8518:8 NaN deci, 8520:7, 8489:6, jumps random no _i pattern – Fano mixed), mean |comp| ~1.5e9 (e.g. 8518:1.4e9, 8520:1.3e9, 8489:1.2e9, 8549:1.6e9 – no gradient malejący do exact, chaos jumps ~4e8), sum abs~1.2e10 (no small sum cluster, nawet +1=8520 sum 1.1e10 large).
+Pattern: Signs altern random (e.g. _comp._3 NaN or -1255566945 neg in 8512, pos in 8516 – no liniowe), jumps no periodicity (roots primes + shuffle demolują cycle, irracjonal mantysa unique), emergent CP~10^{-3} (Δ_key=1 → Δ_output ~1e9 jumps, asymetria strong – no approx). NaN positions random (e.g. _3 NaN in 80% close keys, but no correlation with Δ_key).
+
+Możliwości ataków na przybliżanie klucza: Brak – statystyki demolują:
+
+Gradient/hill-climb: No (mean/sum jumps random, no smooth malejąca to exact – stuck in local max chaos).
+Pattern low bits: No (comp signs/jumps no cycle, primes roots irracjonal demolują binary patterns – no binary search on bits).
+NaN count threshold: No (NaN avg flat ~7, even close ±1 high 7-8, no drop to 0 except exact).
+Stat mean/sum approx: No (variance high ~5e8, no cluster small mean around exact – false positives in chaos).
+Emergent: CP~10^{-3} asymetria demoluje (small Δ_key → large/NaN Δ_comp, like PDG lt asymmetry, no linear extrapolation).

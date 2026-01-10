@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"exe_crypt_msg_v2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"exe_crypt_msg_v2",
+  "parent":{
+    "name":"cipher_use",
+    "path":"folders/Scripts/cipher_use.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

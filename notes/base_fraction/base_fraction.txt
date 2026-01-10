@@ -1,0 +1,15 @@
+function exe_return_base_fraction(_key_max,_key,_rounds)
+{
+	var _left_side = _key;//To jest bardzo wane w kontekście phy!!! jeśli użyjemy bazy _key_max, czyli w kontekście phy 
+	var _right_side = sqrt(_key);//weźmiemy sobie jakąś skalę odniesienia, to wykładniki skonwergują
+	for(var i = 0; i < _rounds; i+=2 )//uzyskane liczby doprowadzając do kolapsu pod wybraną liczbę;
+		{
+			_left_side += power(_key,1./prime_list[i]);
+			_right_side += power(_key,1./prime_list[i+1]);
+		}
+	var base_fraction = _left_side/_right_side;
+show_debug_message("_left_side : " + string(_left_side));	
+show_debug_message("_right_side : " + string(_right_side));
+show_debug_message("base_fraction : " + string(base_fraction));	
+	return(base_fraction);
+}

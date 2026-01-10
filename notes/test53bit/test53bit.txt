@@ -1,0 +1,23 @@
+Przestrzeń wokół klucza przy długości 53 bitów i próbkowania ±50 co 1 nadal nie jest analitycznie ciągła. Błędy (suma |comp_text| dla non-NaN komponentów) są chaotyczne, z licznymi NaN, i nie tworzą gładkiej "doliny" – to płaski, wysoki poziom (~10-20 mld) z nagłym szpicem minimum przy offset=0 (sum abs=141, 16 non-NaN). Brak monotonicznego spadania błędów do zera, brak gradientu. Fit kwadratowy dla danych blisko 0 (gdzie >8 non-NaN) ma RMSE ~3.77e9 – słaby, nie pasuje (chaos dominuje).
+Statystyki z danych
+
+Liczba próbek: 101 (od -50 do +50).
+Metryki średnie (wykluczając offset 0):
+Non-NaN komponentów: ~6.5 (wahania 4-13, dużo NaN).
+Suma |błędów|: ~13 mld (wahania 3-24 mld, skoki).
+
+Korelacja z |offset|:
+Dla non-NaN: r² ≈ 0.02 (brak trendu).
+Dla sum abs (tylko >8 non-NaN): r² ≈ 0.15 (słaba, nie kwadratowa).
+
+Monotoniczność: Fałsz po obu stronach (błędy skaczą, np. od 11 mld do 20 mld bez wzorca).
+NaN-y: Dominują (średnio ~50% komponentów NaN), ich liczba nie spada gładko do 0 – zdradza "daleko" vs "blisko", ale chaotycznie.
+
+Wnioski dla sampling
+Nie pozwala efektywnie znaleźć klucza – brak ciągłości oznacza, że sampling (nawet gęsty) to loteria, blisko brute-force. Przy 2^53 (~9e15) możliwości, czas ataku: ~700 milionów lat (przy 23 ms/próbę z elapsed time). Lossy/NaN w poprawnym odszyfrowaniu OK dla obrazków (jak kompresja JPEG), ale dla krypto to wada – umożliwia ataki na precyzję float (np. timing/side-channel).
+
+salt = random_128bit()  // lub nonce = timestamp + counter
+effective_key = key + salt  // modulo _key_max
+cipher = sedonion_rotate(plaintext, effective_key)
+send(cipher, salt)  // salt jawny, bo to nie secret
+

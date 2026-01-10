@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"f_scale_QCO_Like_v2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"f_scale_QCO_Like_v2",
+  "parent":{
+    "name":"cipher_use",
+    "path":"folders/Scripts/cipher_use.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

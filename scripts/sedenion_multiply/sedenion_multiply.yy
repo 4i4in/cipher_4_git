@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sedenion_multiply",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sedenion_multiply",
+  "parent":{
+    "name":"cipher_use",
+    "path":"folders/Scripts/cipher_use.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

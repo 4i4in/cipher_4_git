@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"exe_test_f_32_vec_16",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"exe_test_f_32_vec_16",
+  "parent":{
+    "name":"cipher_test",
+    "path":"folders/Scripts/cipher_test.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

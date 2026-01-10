@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"exe_return_vote_holder",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"exe_return_vote_holder",
+  "parent":{
+    "name":"cipher_test",
+    "path":"folders/Scripts/cipher_test.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

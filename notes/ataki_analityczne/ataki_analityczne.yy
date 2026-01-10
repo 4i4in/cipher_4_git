@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"ataki_analityczne",
+  "name":"ataki_analityczne",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

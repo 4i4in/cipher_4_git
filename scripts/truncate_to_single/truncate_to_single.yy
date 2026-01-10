@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"truncate_to_single",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"truncate_to_single",
+  "parent":{
+    "name":"cipher_use",
+    "path":"folders/Scripts/cipher_use.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

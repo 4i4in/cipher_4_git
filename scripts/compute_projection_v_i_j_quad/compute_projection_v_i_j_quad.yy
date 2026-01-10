@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"compute_projection_v_i_j_quad",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"compute_projection_v_i_j_quad",
+  "parent":{
+    "name":"quad_float_ops",
+    "path":"folders/Scripts/quad_float_ops.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

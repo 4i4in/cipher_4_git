@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"single_euclid_rot_16",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"single_euclid_rot_16",
+  "parent":{
+    "name":"cipher_use",
+    "path":"folders/Scripts/cipher_use.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

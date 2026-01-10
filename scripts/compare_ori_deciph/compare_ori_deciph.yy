@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"compare_ori_deciph",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"compare_ori_deciph",
+  "parent":{
+    "name":"cipher_use",
+    "path":"folders/Scripts/cipher_use.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

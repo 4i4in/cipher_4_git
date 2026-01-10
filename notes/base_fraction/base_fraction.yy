@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"base_fraction",
+  "name":"base_fraction",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"f_split_sed_to_2o",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"f_split_sed_to_2o",
+  "parent":{
+    "name":"cipher_use",
+    "path":"folders/Scripts/cipher_use.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
