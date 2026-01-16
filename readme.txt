@@ -29,8 +29,7 @@ Treat this as cryptographic performance art / intellectual provocation / very st
 
 
 ### License
-[Unlicense](https://unlicense.org/)  
-— take it, break it, improve it, no copyrights, no warranties, no liability;
+Have a fun with nocommercial use.
 
 **For the lulz disclaimer:**  
 I hereby solemnly reserve all rights to sedenions, rotations of the 15-sphere, and the number π — including every digit till the heat death of the universe. 😏
@@ -38,4 +37,5 @@ I hereby solemnly reserve all rights to sedenions, rotations of the 15-sphere, a
 Have fun!
 
 //version 3: cipher_base_n_03.py 
+
 Pearson r = -0.0 (p-value = 1.0), no gradient, no structures; nothing I can find;
