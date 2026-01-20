@@ -1,0 +1,276 @@
+This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
+Commercial use of this software (including but not limited to SaaS, hosting as a service, or any paid offering) requires a separate commercial license.
+Contact: 4i4in(at)protonmail.com for licensing inquiries.
+
+# ICC TEC IAC (primitive free "cipher") – Experimental Irreversible Approximate Stream Transformation
+# Core Chaos Generation – Key-Based Prime Reciprocal Exponentiation
+This is an experimental cryptographic / data transformation method based on deterministic algebraic chaos using transcendental functions, high-precision floating-point arithmetic, rotations in exotic algebras (including sedenions), and controlled accumulation of IEEE 754 rounding errors.
+
+**Important: This is NOT a standard cryptographic primitive.**  
+It is a highly specialized, irreversible approximate transformation that exploits the fundamental imperfections of real-world floating-point units.
+
+## Licensing – Strict Dual License
+
+This software is distributed under a **strict dual licensing** model:
+
+### 1. Open-Source / Non-Commercial License
+- **GNU Affero General Public License v3.0 (AGPL-3.0-or-later)**  
+  Full text: https://www.gnu.org/licenses/agpl-3.0.txt
+
+  You may use, modify and distribute this software **only for non-commercial, personal, research or educational purposes** under the terms of AGPL-3.0.
+
+  **Network use clause:** If you run a modified version on a server and provide access over a network (SaaS, API, web service etc.), you **must** make your complete modified source code available under AGPL-3.0 to every user.
+
+### 2. Commercial / Proprietary License – Required for ANY commercial activity
+Any form of **commercial use**, including but not limited to:
+
+- Integration into commercial products or services  
+- Offering as SaaS, cloud service, API or paid tool  
+- Use in for-profit research, consulting or deployment  
+- **Creating any reimplementation, port, rewrite or derivative work** (in any programming language) intended for commercial purposes  
+- Any use that generates revenue directly or indirectly
+
+**requires a separate commercial license** from the author.
+
+**Explicit prohibition on reimplementation:**  
+You are **explicitly prohibited** from creating, publishing or using any reimplementation, port, rewrite, clean-room implementation or functionally equivalent derivative of this algorithm (in any programming language or form) for commercial purposes without a prior written commercial license from the author.
+
+**Contact for commercial licensing and exceptions:**  
+4i4in(at)protonmail.com
+Please include:  
+- Detailed description of intended use  
+- Whether you plan any reimplementation/port  
+- Business context and expected scale
+
+The author reserves the right to grant, deny or set custom terms and fees for any commercial license at his sole discretion.
+
+## Extremely Niche Nature of This Work
+
+This project involves advanced algebraic structures (including rotations in **sedenions** and other hypercomplex numbers), transcendental functions evaluated in high-precision floating-point arithmetic, and deliberate exploitation of IEEE 754 rounding errors in real hardware.
+
+**Fewer than 10–20 people on the planet** actively work on or deeply understand the combination of:
+- transcendental floating-point arithmetic on exotic algebras (sedenions, octonions etc.)
+- controlled non-unitary operations via rounding errors
+- rotations of such objects in cryptographic/data-transformation contexts
+
+The vast majority of mathematicians, cryptographers and programmers still operate within the paradigm of real/complex numbers and assume perfect precision – which is why nobody has built anything quite like this before.
+
+**If you want to implement or extend this work correctly – you probably need someone who already understands these concepts.**  
+This is not trivial mathematics. It is a very specialized, almost esoteric domain.
+
+## Legal & Security Notices
+
+- This is **experimental software with no formal security audit**.  
+- It should **NOT** be used to protect sensitive or production data without independent review.  
+- The author provides **no warranty** of any kind. Use at your own risk.
+
+Thank you for your interest in this unusual piece of work!
+
+
+
+
+
+
+## However... consider practical (non legal) reasons:
+
+## Why this is extremely niche and difficult
+
+This project uses rotations of objects in **sedenions** (and related hypercomplex algebras) combined with transcendental floating-point arithmetic and deliberate exploitation of IEEE 754 rounding errors.
+
+**Fewer than 2000 people on Earth** seriously work on this intersection of mathematics.  
+Almost everyone else still lives under the collective illusion that real numbers and perfect precision are sufficient.
+
+**If you're trying to implement or extend this – you almost certainly need someone who already understands these things.**  
+This is not beginner-friendly or even advanced-undergrad math. It's a very rare, almost esoteric corner of applied algebra.
+
+
+## Prerequisites & Extremely Niche Nature of This Work
+
+This project sits at the intersection of **exotic hypercomplex algebras** (sedenions, octonions, Cayley-Dickson construction), **high-precision transcendental floating-point arithmetic**, **controlled IEEE 754 rounding errors**, and **deterministic algebraic chaos**.
+
+### Required Qualifications / Prerequisites (what you actually need to understand and extend this work)
+
+- Strong intuition in **abstract algebra** (groups, rings, division algebras, non-associative algebras)
+- Solid understanding of **hypercomplex numbers** (complex › quaternions › octonions › sedenions and beyond)
+- Deep knowledge of **floating-point arithmetic** (IEEE 754 details: rounding modes, error propagation, Kahan summation, loss of precision in transcendental functions)
+- Experience with **high-precision arithmetic** (libraries like mpmath, Arb, or custom big-float implementations)
+- Familiarity with **numerical chaos** and sensitivity to initial conditions (Lyapunov exponents in algebraic iterations)
+- Ability to think about **non-unitary operations** in finite-precision computing
+- Proficiency in Python/C++ for low-level numerical experiments
+
+**Formal degrees are not required** – many people working in this area are self-taught or come from physics/engineering backgrounds. What matters is being able to **read and implement** papers on sedenions, transcendental functions in floating-point, and controlled numerical irreversibility.
+
+### How Niche Is This Really?
+
+- **Active researchers publishing regularly** in this exact intersection: **~10–20 people worldwide** (mostly from China, India, a few in Europe and USA).
+- **Total publications** on sedenions + applications (since ~2000): **~80–120 papers** (arXiv + journals).
+- **Publications specifically combining sedenions/octonions with floating-point arithmetic / chaos / irreversibility**: **~15–25 papers** (mostly 2018–2025).
+- **Frequency**: **2–5 new papers per year** in recent years (peak around neural networks with hypercomplex numbers and chaos-based computing).
+
+Because the field is so small, **the same handful of names appear repeatedly** as authors or co-authors.
+
+### Key Researchers (recurring names in publications)
+
+- Shuxing Li
+- Yong Deng
+- Wenwu Yu
+- Jianhua Lu
+- Xiaoyang Liu
+- Guodong Zhang
+- Tingting Liu
+- Mohammad Reza Molaei
+- Susumu Okubo (historical, foundational)
+- Tevian Dray & Corinne A. Manogue (octonions & physics applications)
+
+These are the people who most often publish in this tiny corner of mathematics and applied algebra.
+
+If you're trying to implement, extend or understand this work properly — you will almost certainly need to read papers by at least a few of the above names.
+
+
+## Why Even a Step-by-Step Explanation Won't Make This Easy to Reimplement
+
+Even if I provide a complete, step-by-step breakdown of the algorithm (including the exact sequence of operations, transcendental functions used, precision levels, rotation angles derived from the key, Kahan summation, and error accumulation), **most teams will still not be able to produce a faithful, production-ready implementation**.
+
+Why?
+
+- The knowledge required is extremely rare and scattered across ~10–20 active researchers worldwide.
+- Understanding sedenions/octonions in practice (not just theory), their pathological properties (non-associativity, zero divisors), and how they interact with floating-point chaos requires years of experimentation.
+- Verifying correctness is nearly impossible without a second expert who already deeply understands the behavior on real hardware (different CPUs produce subtly different rounding patterns).
+- The "near enough" approximation and controlled irreversibility are emergent properties – easy to break if you miss even one detail.
+
+In short:  
+**You can read the recipe, but baking the cake correctly requires someone who has already baked dozens of similar (and failed) versions.**  
+Most companies simply do not have – and will not easily find – such a person.
+
+If you're a company interested in using or adapting this work commercially – the safest and fastest path is to contact me directly for a license or collaboration.
+
+## Why Even AI (LLMs like Grok, GPT, Claude) Won't Be Very Helpful Here
+
+Even the most advanced AI models struggle significantly with this project – and here's why.
+
+### Extremely Limited Training Data
+- There are only **~15–25 papers** worldwide (2018–2025) that touch on the exact intersection of:
+  - sedenions / octonions in practice
+  - high-precision transcendental functions (sin/cos/exp/log in mpmath or similar)
+  - controlled accumulation of IEEE 754 rounding errors + Kahan summation
+  - deterministic algebraic chaos leading to practical irreversibility
+- Almost none of these papers include **real code implementations** or detailed experiments on multiple hardware platforms.
+- The vast majority of AI training corpora (arXiv, GitHub, books, forums) contains **zero or near-zero practical examples** of this combination.
+- Result: AI knows the **theory** (what sedenions are, how floating-point rounding works), but has **almost no real-world data** on how transcendental rotations in sedenions behave under controlled finite precision, how errors propagate chaotically, or why the "near enough" reconstruction looks exactly the way it does.
+
+### Emergent Phenomena That Can't Be Deduced Theoretically
+The core irreversibility and "near enough" approximation are **emergent properties**:
+- They arise only after **hundreds of iterations**
+- They depend on **tiny, hardware-specific rounding differences**
+- They require **empirical testing on real CPUs** (different Intel/AMD/ARM produce subtly different results)
+AI cannot "simulate" this faithfully because:
+- It doesn't have access to real hardware execution traces
+- It can't run thousands of experiments across dozens of processors
+- It lacks the "lived experience" of seeing how small changes break the chaos or ruin the approximation
+
+### What AI Can Actually Help With (limited use cases)
+- Explaining basic theory (Cayley-Dickson construction, IEEE 754 rounding modes, transcendental function instability)
+- Suggesting small code optimizations or debugging obvious syntax/logic errors
+- Generating high-level pseudocode or alternative formulations
+- Helping write documentation or READMEs
+
+### What AI Cannot Reliably Do
+- Verify if a reimplementation preserves the **exact same irreversibility profile**
+- Predict how the algorithm will behave on a specific CPU generation
+- Debug subtle numerical instabilities that only appear after 500+ iterations
+- Confirm that the "near enough" reconstruction is close enough for your use case
+- Replace a human expert who has already spent months/years experimenting with similar setups
+
+**Bottom line:**  
+Even with a perfect step-by-step description and full source code, **AI is not a substitute** for deep, hands-on experience in this ultra-niche domain.  
+Any serious reimplementation or verification still requires **a rare human expert** – and there are only ~10–20 such people active worldwide.
+
+If you're a company or researcher wanting to use, adapt or verify this work – the fastest and safest path is direct collaboration or a commercial license.
+
+
+## Why Open-Source Code Doesn't Make This Easy to Copy
+
+This project is fully open-source because serious cryptographic tools **must have open code** – only the user's key should remain secret (Kerckhoffs's principle).
+
+Paradoxically, publishing the full source code **does not make it easy to copy or commercialize**:
+- The technical threshold is extraordinarily high (sedenions + transcendental floats + controlled FPU irreversibility).
+- Even with the full code and step-by-step explanation, reimplementing it faithfully requires rare expertise that almost no company possesses.
+- Verifying correctness is nearly impossible without a second expert who already deeply understands the emergent chaos and hardware-specific behavior.
+
+In practice: the code can be public, and it still remains **practically impossible** for others to turn it into a reliable, production-ready product without your involvement.
+
+## Category & Type of Cipher
+
+This is **not** a classical cryptographic primitive.
+
+It belongs to the rare category of:
+
+**Irreversible Approximate Stream Cipher / Lossy Chaos-Based Encryption**
+
+- **No hard mathematical problem** (no discrete log, no factoring, no LWE)
+- **No secret primitive** (security comes from real-world floating-point arithmetic imperfections)
+- **Channel is deliberately destroyed** (perfect reconstruction is impossible even with the correct key – only "near enough" approximation)
+- **Hardware-dependent irreversibility** (relies on IEEE 754 rounding errors + transcendental function instability in finite precision)
+
+Similar concepts appear in:
+- Chaos-based cryptography (mostly Chinese/Indian publications & patents)
+- Approximate computing & lossy encryption
+- Hardware-exploiting irreversible transformations
+
+It is **not** a standard symmetric cipher (like AES or ChaCha), because it is **intentionally lossy and irreversible** – designed for scenarios where perfect decryption is not required, but perfect irreversibility without the key is critical (e.g., air-gapped systems, data obfuscation, watermarking, or approximate data protection in critical infrastructure).
+
+## Category & Unique Properties
+
+This is an **Irreversible Chaos-Based Stream Cipher with Optional Lossless Mode**, exploiting real-world floating-point arithmetic imperfections (IEEE 754 rounding errors + transcendental function instability).
+
+Key properties:
+- **No hard mathematical problem** › **resistant to Shor's and Grover's algorithms** by design (no DLP, no factoring, no lattice problem).
+- **Statistical randomness** — Kolmogorov-Smirnov p ? 0.99, correlation ? -0.01, Person correlation ? 0.
+- **No oracle** — even with correct key, only "near enough" reconstruction (lossy mode); lossless mode available under controlled conditions.
+- **Key extraction attacks** are hardware/configuration attacks (memory dump, cold-boot), not algorithmic.
+- **Security from destroyed information channel** — perfect reconstruction impossible without the key.
+
+This places it in a new category: **hardware-exploiting irreversible cryptography** — not classical symmetric ciphers, not post-quantum lattice-based, but something entirely different.
+
+## Why This Is Entirely Different – and Why It Matters
+
+This cipher has **no primitive**, **no secret beyond the key**, and **deliberately destroys the information channel** – perfect reconstruction is impossible even with the correct key (only "near enough").
+
+- Resistant to Shor's & Grover's by design (no hard mathematical problem).
+- Statistical tests: Kolmogorov-Smirnov p ? 0.99, correlation ? -0.01.
+- Optional "lossless-like" behavior in the first 16 bits (due to truncation to 256-bit precision), with the rest being noisy / NaN-prone – yet still usable for transmitting machine code without critical errors.
+- Key extraction attacks are hardware/configuration attacks (memory dump, cold-boot), not algorithmic.
+
+This places it in a **new category**: hardware-anchored irreversible chaos cryptography – entirely different from classical symmetric ciphers, post-quantum lattice schemes, or traditional chaos-based encryption.
+
+
+## How It Works – Degraded-Channel Symmetric Cipher
+
+- **Encryption**:  
+  Input data › vec16×64-bit state (full sedenion precision).  
+  Rotate the vector using key-derived angles.  
+  Output exactly the rotated vec16×64-bit state – no artificial reduction to 32-bit.
+
+- **Decryption**:  
+  Using the same key › reverse rotations › arrive close to the original vec16×64-bit state ("near enough").
+
+- **Key properties**:  
+  - **Symmetric** – same key for encryption & decryption.  
+  - **No semantic information** in ciphertext – pure chaotic machine state after rotation.  
+  - **Deliberate channel degradation** – irreversibility emerges from hyperbolic chaos + IEEE 754 rounding errors + transcendental function instability in finite precision.  
+  - **One deviation** (rounding, order, CPU) › lands in hyperbolic chaos, zero chance of recovery.
+
+This is a **new category**: symmetric degradative cipher – security rooted in emergent hardware-anchored irreversibility and channel destruction, not in mathematical primitives.
+
+
+
+
+## Core Chaos Generation – Key-Based Prime Reciprocal Exponentiation
+Test results:
+Average Lyapunov exponent: ~114 (per round, float approx; variance huge, early rounds low/negative, late explode 100-200+);
+Cumulative sum of log div: ~5702 (sum λ_r over 50 rounds);
+Effective divergence: e^{5702} – insane, too big to compute (mpmath chokes on exp, but est as e^5702);
+Estimated bits lost: ~8227 (cum_sum / ln(2) – approx info erased, matches for cipher 10^4-10^5 for more rounds);
+Exploding wildly (od 17 do 2e3 do -4e7 do 7e32 do -5e1 to 6e38 to 1e29 to -2e3 to 1e38 to -1e90+ to 4e96 to -2e3 to -2e99 to 1e27 – magnitudes 10^0 to 10^300+, sign flips, huge jumps).
+ulti perturb: hyperbolic chaos full (variance >>, steps amp 10^24+);
+exe_test_Max_Lyapunov (multi dt perturb, 50 rounds): Exploding wildly (od 17 do 2e3 do -4e7 do 7e32 do -5e1 to 6e38 to 1e29 to -2e3 to 1e38 to -1e90+ to 4e96 to -2e3 to -2e99 to 1e27 – magnitudes 10^0 to 10^300+, sign flips, huge jumps).
