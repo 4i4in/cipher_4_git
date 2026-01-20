@@ -28,14 +28,13 @@ Most of the dirty CD algebra, Wick rotation abuses, matrix projections and found
 Treat this as cryptographic performance art / intellectual provocation / very strange hobby project.
 
 
-### License
-Have a fun with nocommercial use.
-
-**For the lulz disclaimer:**  
-I hereby solemnly reserve all rights to sedenions, rotations of the 15-sphere, and the number π — including every digit till the heat death of the universe. 😏
+This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
+Commercial use of this software (including but not limited to SaaS, hosting as a service, or any paid offering) requires a separate commercial license.
+Contact: [4i4in(at)protonmail.com] for licensing inquiries.
 
 Have fun!
 
 //version 3: cipher_base_n_03.py 
 
 Pearson r = -0.0 (p-value = 1.0), no gradient, no structures; nothing I can find;
+
