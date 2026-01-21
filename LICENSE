@@ -266,4 +266,7 @@ This is a **new category**: symmetric degradative cipher – security rooted in 
 
 
 ## Core Chaos Generation – Key-Based Prime Reciprocal Exponentiation
-Creating test;
+Average λ L2 across all rounds (over 100 tests): 3.01
+Average λ L2 for large rounds (≥30) (over 100 tests): 0.91
+Average dead elements per test: 0.32
+→ Asymptotic growth factor: e^λ ≈ 2.487× per iteration
