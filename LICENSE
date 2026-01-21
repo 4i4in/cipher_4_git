@@ -266,11 +266,4 @@ This is a **new category**: symmetric degradative cipher – security rooted in 
 
 
 ## Core Chaos Generation – Key-Based Prime Reciprocal Exponentiation
-Test results:
-Average Lyapunov exponent: ~114 (per round, float approx; variance huge, early rounds low/negative, late explode 100-200+);
-Cumulative sum of log div: ~5702 (sum λ_r over 50 rounds);
-Effective divergence: e^{5702} – insane, too big to compute (mpmath chokes on exp, but est as e^5702);
-Estimated bits lost: ~8227 (cum_sum / ln(2) – approx info erased, matches for cipher 10^4-10^5 for more rounds);
-Exploding wildly (od 17 do 2e3 do -4e7 do 7e32 do -5e1 to 6e38 to 1e29 to -2e3 to 1e38 to -1e90+ to 4e96 to -2e3 to -2e99 to 1e27 – magnitudes 10^0 to 10^300+, sign flips, huge jumps).
-ulti perturb: hyperbolic chaos full (variance >>, steps amp 10^24+);
-exe_test_Max_Lyapunov (multi dt perturb, 50 rounds): Exploding wildly (od 17 do 2e3 do -4e7 do 7e32 do -5e1 to 6e38 to 1e29 to -2e3 to 1e38 to -1e90+ to 4e96 to -2e3 to -2e99 to 1e27 – magnitudes 10^0 to 10^300+, sign flips, huge jumps).
+Creating test;
